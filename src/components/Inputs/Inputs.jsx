@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Inputs() {
+  const [initialInvestment, setInitialInvestment] = useState("");
+  const [annualInvestment, setAnnualInvestment] = useState("");
+  const [expectedReturn, setExpectedReturn] = useState("");
+  const [duration, setDuration] = useState("");
   return (
     <form id={"user-input"}>
       <div className={"input-group"}>
